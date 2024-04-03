@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Perfil</h1>
+    <form action="/accion.php" method="POST" target="_self">
+        <input type="text" name="estudiante" id="estudiante" readonly value="ESTUDIANTE">
+        <br>
+        <label for="nombre-completo">Nombre completo</label>
+        <br>
+        <input type="text" name="nombre-completo" id="nombre-completo" placeholder="Juan Pérez">
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" name="email" id="email" placeholder="juanperez@gmail.com">
+        <br>
+        <label for="edad">Edad</label>
+        <br>
+        <input type="number" name="edad" id="edad" placeholder="21">
+        <br>
+        <label for="nacionalidad">Nacionalidad</label>
+        <br>
+        <select name="nacionalidad" id="nacionalidad">
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Chile">Chile</option>
+            <option value="Uruguay">Uruguay</option>
+        </select>
+        <br>
+        <label for="situacion-laboral">Situación Laboral</label>
+        <br>
+        <select name="situacion-laboral" id="situacion-laboral">
+            <option value="desempleado">Desempleado</option>
+            <option value="en-busqueda-laboral">En búsqueda laboral</option>
+            <option value="trabajo-part-time">Trabajo part-time</option>
+            <option value="trabajo-full-time">Trabajo full-time</option>
+        </select>
+
+        <section id="gustos-personales">
+            <h2>Gustos personales</h2>
+            <label for="gustos-musicales">Gustos Musicales</label>
+            <br>
+            <textarea name="gustos-musicales" id="gustos-musicales" cols="30" rows="10" placeholder="Ingrese sus gustos musicales"></textarea>
+            <br>
+            <select name="comidas-preferidas" id="comidas-preferidas">
+                <option value="milanesas">Milanesas</option>
+                <option value="asado">Asado</option>
+                <option value="pizza">Pizza</option>
+                <option value="empanadas">Empanadas</option>
+            </select>
+            <br>
+            <label for="guardar-datos">Guardar datos</label>
+            <input type="checkbox" name="guardar-datos" id="guardar-datos">
+            <br>
+            <button type="submit">Enviar</button>
+        </section>
+    </form>
+</body>
+</html>

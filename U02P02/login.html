@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <p>Ingrese los datos para iniciar sesión</p>
+
+    <form action="/accion.php" method="POST" target="_self">
+        <label for="nombre">Nombre</label>
+        <br>
+        <input type="text" name="nombre" id="nombre" placeholder="Juan">
+        <br>
+        <label for="apellido">Apellido</label>
+        <br>
+        <input type="text" name="apellido" id="apellido" placeholder="Perez">
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" name="email" id="email" placeholder="juanperez@gmail.com">
+        <br>
+        <label for="mensaje">Dejá tu mensaje!</label>
+        <br>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="..."></textarea>
+        <br>
+        <label for="contraseña">Contraseña</label>
+        <br>
+        <input type="password" name="contraseña" id="contraseña">
+        <br>
+        <input type="checkbox" name="checkbox" id="checkbox">Recordar datos
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
