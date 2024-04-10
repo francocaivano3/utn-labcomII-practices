@@ -1,0 +1,59 @@
+* {
+    font-family: sans-serif;
+}
+
+html {
+    background-color: rgb(245, 245, 245);
+}
+
+h1{
+    font-size: 24px;
+    color: #242424;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 20px;
+    color: #606060;
+    font-weight: 800;
+}
+
+p{
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+li{
+    font-family: monospace;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+li:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+ul > li > a {
+    color: orange;
+    text-decoration: underline;
+}
+
+ul {
+    margin-left: 100px;
+    padding: 20px;
+    border: 2px solid blue;
+    max-width: 40%;
+    list-style: none;
+}
+
+li.neuquen, li.rio-negro {
+    color: green; 
+}
+
+li.neuquen > a, li.rio-negro > a {
+    color: green;
+}
+
