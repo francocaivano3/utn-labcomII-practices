@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#contenedorFormularios {
+    margin-top: 40px;
+}
+
+input, label, select, button, p {
+    margin: 10px;
+}

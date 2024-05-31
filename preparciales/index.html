@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenedorFormularios">
+        <form action="" id="formCalcular">
+        <label for="pesos">Pesos Argentinos</label><br>
+        <input type="number" name="pesos" id="pesos" placeholder="20000"><br>
+        <select name="monedas" id="monedas">
+            <option value="" disabled selected>Ingrese una moneda</option>
+            <option value="dolar">Dolar</option>
+            <option value="euro">Euro</option>
+        </select><br>
+        <button type="button" id="calcular">Calcular</button>
+    </form>
+
+    <p id="resultado"></p>
+
+    <form action="" id="formAgregarMoneda">
+        <label for="monedaNueva">Moneda nueva</label><br>
+        <input type="text" name="monedaNueva" id="monedaNueva"><br>
+        <label for="costoConversion">Costo de conversión</label><br>
+        <input type="number" name="costoConversion" id="costoConversion"><br>
+        <button type="button" id="enviarMoneda">Enviar</button>
+    </form>
+    <p id="envio"></p>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
